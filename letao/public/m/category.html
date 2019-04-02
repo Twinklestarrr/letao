@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/category.css">
+</head>
+<body>
+    <header id="header" class="mui-bar mui-bar-nav myheader">
+        <!-- <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a> -->
+        <h1 class="mui-title">导航栏</h1>
+        <a href="javascript:;" class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <!-- 内容 -->
+    <div class="cate_content">
+        <div class="cate_left">
+            <div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="brand-list mui-clearfix myleft">
+                       <!-- <li class="active">
+                           <a href="#">男士馆</a>
+                       </li>
+                        <li>
+                            <a href="#">生活馆</a>
+                        </li> -->
+					</ul>
+				</div>
+            </div>
+        </div>
+        <div class="cate_right">
+            <div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="brand-list mui-clearfix myright">
+                        <!-- <li>
+                            <a href="#">
+                                <img src="./images/brand1.png" alt="">
+                                <p>nike</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/brand2.png" alt="">
+                                <p>adidas</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/brand3.png" alt="">
+                                <p>李宁</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/brand4.png" alt="">
+                                <p>安踏</p>
+                            </a>
+                        </li> -->
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="mui-bar mui-bar-tab myfooter">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars">
+                <!-- <span class="mui-badge">9</span> -->
+            </span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</body>
+<script src="./assets/mui/js/mui.js"></script>
+<script src="./assets/zepto/zepto.min.js"></script>
+<script src="./assets/art-template/template-web.js"></script>
+<script src="./js/categroy.js"></script>
+<script type="text/template" id="topCateTpl">
+    {{each rows}}
+    <li data-id="{{$value.id}}"><a href="#">{{$value.categoryName}}</a></li>
+    {{/each}}
+</script>
+<script type="text/template" id="secondCateTpl">
+    {{each rows}}
+    <li>
+        <a href="#">
+            <img src="{{$value.brandLogo}}" alt="">
+            <p>{{$value.brandName}}</p>
+        </a>
+    </li>
+    {{/each}}
+    {{if (!rows.length)}}
+        <div class="none">暂无数据</div>
+    {{/if}}
+</script>
+
+</html>

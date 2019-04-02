@@ -1,0 +1,30 @@
+@baseColor:#006699;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+.myHeader{
+    background-color: @baseColor;
+    >h1{
+        color:#fff;
+    }
+    >.mui-icon-search{
+        color:#fff;
+    }
+}
+
+.myFooter{
+    background-color: @baseColor;
+    .mui-tab-item{
+        color:#fff;
+        &.mui-active{
+            color:darkorange;
+        }
+    }
+    
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+body,
+.mui-content {
+  background-color: #fff;
+}
+.myheader {
+  background-color: #006699;
+}
+.myheader h1 {
+  color: #fff;
+}
+.myheader .mui-icon-search {
+  color: #fff;
+}
+.myfooter {
+  background-color: #006699;
+}
+.myfooter .mui-tab-item {
+  color: #fff;
+}
+.myfooter .mui-tab-item.mui-active {
+  color: darkorange;
+}

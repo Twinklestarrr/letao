@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+body,
+.mui-content {
+  background-color: #fff;
+}
+.myheader {
+  background-color: #006699;
+}
+.myheader h1 {
+  color: #fff;
+}
+.myheader .mui-icon-search {
+  color: #fff;
+}
+.myfooter {
+  background-color: #006699;
+}
+.myfooter .mui-tab-item {
+  color: #fff;
+}
+.myfooter .mui-tab-item.mui-active {
+  color: darkorange;
+}
+.mui-content {
+  margin-bottom: 50px;
+}
+.mui-content .mui-row {
+  padding: 10px;
+}
+.mui-content .mui-row .mui-col-sm-6 {
+  background-color: #ddd;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.mui-content .mui-row .mui-col-sm-6 .mui-icon {
+  font-size: 14px;
+}
+.mui-content .life {
+  padding: 10px;
+}
+.mui-content .life img {
+  width: 100%;
+}
+.mui-content .life ul > li {
+  text-align: center;
+  float: left;
+  padding: 5px;
+  width: 50%;
+}
+.mui-content .life ul > li a {
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+  padding: 5px;
+  overflow: hidden;
+}
+.mui-content .life ul > li .text {
+  font-size: 14px;
+  color: #8f8f94;
+}
+.mui-content .life ul > li p {
+  font-size: 12px;
+}
+.mui-content .life ul > li p span {
+  color: red;
+  padding-right: 6px;
+}
+.mui-content .life ul > li p del {
+  color: #ccc;
+}
+.mui-content .life ul > li div button {
+  background-color: #006699;
+  color: #fff;
+}

@@ -1,0 +1,72 @@
+// 引入base.css
+@import "base.less";
+
+// 图片导航
+.mui-content{
+    img{
+        width: 100%;
+    }
+    .con-links{
+        padding: 10px;
+        li a{
+            float: left;
+            width: 33.3%;
+            img{
+                // 两种方法去除两边的间隙
+                vertical-align: top;
+                // display: block;
+            }
+        }
+    }
+    // 品牌专区
+    .nav_berand{
+        padding: 10px;
+        // img{
+        //     width: 100%;
+        // }
+        ul>li{
+            width: 25%;
+            float: left;
+        }
+    }
+    // 生活专区
+    .life{
+        padding: 10px;
+        // img{
+        //     width: 100%;
+        // }
+        ul>li{
+            text-align: center;
+            float: left;
+            padding: 5px;
+            width: 50%;
+            a{
+                display: block;
+                box-shadow: 0 0 5px #ccc;
+                padding: 5px;
+                overflow: hidden;
+            }
+            .text{
+                font-size: 14px;
+                color: #8f8f94;
+            }
+            p {
+                font-size: 12px;
+                span{
+                    color: red;
+                    padding-right: 6px;
+                }
+                del{
+                    color: #ccc;
+                }
+            }
+            div{
+                button{
+                    background-color: #006699;     
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
